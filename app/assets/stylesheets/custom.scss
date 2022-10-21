@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$light-gray: rgb(237, 76, 17);
+
 /* Site wide layout & pages */
 
 body {
@@ -17,10 +19,9 @@ textures {
 
 .center {
   text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+  h1 {
+    margin-bottom: 10px;
+  }
 }
 
 /* fonts */
@@ -42,12 +43,12 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: light-gray;
 }
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1.4em;
 }
 
 /* header and logo */
@@ -61,9 +62,39 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  &:hover {
+    color: rgb(48, 110, 235);
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: rgb(48, 110, 235);
-  text-decoration: none;
+/* footer */
+
+footer {
+  clear:both;
+  margin-top: 45px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 5px;
+  border-top: 2px solid #aeb0ae;
+  color: light-gray;
+
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
+
